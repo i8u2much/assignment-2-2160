@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8662388023417475847}
   - component: {fileID: 5091996924101993591}
   - component: {fileID: 2153315316529187279}
+  - component: {fileID: 6387354779637927594}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -50,7 +51,7 @@ MeshRenderer:
   m_GameObject: {fileID: 1135232077654364619}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -91,5 +92,21 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6387354779637927594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135232077654364619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089ee48bda206443b4922281d976a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neonMat: {fileID: 2100000, guid: 1cb5d46d772a8ee479b1ccbef217178e, type: 2}
+  dullMat: {fileID: 2100000, guid: 3eda12455ff01bd49ba68e00f5a7f8ca, type: 2}
+  nextCheckP: {fileID: 0}
+  uiManager: {fileID: 0}
